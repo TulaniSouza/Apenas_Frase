@@ -1,10 +1,16 @@
 import React from "react"
+import Sino from "./Main/Sininho.jpg"
+import Main from "./Main/Main_one.jsx"
+import * as S from "./Main/Main_one.jsx"
+import styled from "styled-components"
+
 
 function App(){
   return(
     <>
-      <h2>Trem pequeno mas a dor de cabeça, não.</h2>
-      <h2 className>teste do class</h2>
+      <h1>Contando o tempo</h1>
+      <img src={Sino} alt=""/>
+      <Main/>
     </>
   )
 }
