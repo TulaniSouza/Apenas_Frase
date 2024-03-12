@@ -1,17 +1,29 @@
-import styled from "styled-components"
-import {creatGlobalStyle} from "styled-components"
+import styled,{createGlobalStyle} from "styled-components"
+import Sininho from "../assets/Sininho.jpg"
 
-export const GlobalStyle=createGlobalStyle`
-body{
+
+const GlobalStyle = createGlobalStyle`
+*{
     margin:0;
     padding:0;
-    border-box:box-sizing;
+    box-sizing:border-box;
 }
 `
-export const StyledAdd=styled.app`
+export const StyledButton=styled.button`
+cursor:pointer;
+margin-bottom:20%;
+margin-left:20%;
+width:5%;
 
-img{
-   background-color: red;
-   
-}
+`
+export const StyledMain=styled.main`
+background-image: url(${Sininho});
+height:80vh;
+width:80%;
+display:flex;
+background-repeat:no-repeat;
+background-size:78% 88%;
+align-items:center;
+justify-content:center;
+margin-left:10%;
 `

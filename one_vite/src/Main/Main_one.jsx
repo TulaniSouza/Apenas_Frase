@@ -1,25 +1,35 @@
 import React, {useState} from "react";
-import Sino from "./Main/Sininho.jpg";
-import Style from "./Style.jsx";
+import * as S from "./Style.jsx"
 
 
-const [number,setNumber]= useState (0)
-
-
+function Contador(){
+const [number,setNumber]= useState(0)
 function Add(){
-    setNumber(number+1)
+    if(number <=100){
+        setNumber(number+1)
+    }
+}
+function Sub(){
+    if(number>0){
+        setNumber(number-1)
+    }
+}
+function Clean(){
+    if(number>=0){
+        setNumber(0)
+    }
+    
+}
     return(
-        <S.StyledAdd>
-            <img src={Sino} alt="Sininho"/>
-            <Style/>
-        
-            <section>
+  
+        <S.StyledMain>
+            <S.StyledButton>
                 <h2>{number}</h2>
                 <button onClick={Add}>+</button>
-                <button onClick>-</button>
-                <button onClick>C</button>
-            </section>
-        </S.StyledAdd>
+                <button onClick={Sub}>-</button>
+                <button onClick={Clean}>C</button>
+            </S.StyledButton>
+        </S.StyledMain>    
     )
 }
-export default Add
+export default Contador
