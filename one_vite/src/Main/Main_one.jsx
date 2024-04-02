@@ -25,9 +25,9 @@ function Clean(){
         <S.StyledMain>
             <S.StyledButton>
                 <h2>{number}</h2>
-                <button onClick={Add}>+</button>
-                <button onClick={Sub}>-</button>
-                <button onClick={Clean}>C</button>
+                <S.Button onClick={Add}>+</S.Button>
+                <S.Button onClick={Sub}>-</S.Button>
+                <S.Button onClick={Clean}>C</S.Button>
             </S.StyledButton>
         </S.StyledMain>    
     )

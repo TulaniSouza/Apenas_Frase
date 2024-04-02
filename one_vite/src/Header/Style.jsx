@@ -8,7 +8,12 @@ height:15vh;
 display:flex;
 align-items: center;
 justify-content: space-evenly;
+width: auto;
 
-  }
-  
+@media (min-width:100px) and (max-width:505px){
+margin-left:10%;
+font-size:1.2em;
+
+
+}
 `
